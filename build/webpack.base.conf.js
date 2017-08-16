@@ -53,6 +53,7 @@ module.exports = {
         loader: 'vue-loader',
         options: vueLoaderConfig
       },
+      //babel-loader很慢，要做好优化
       {
         test: /\.js$/,
         loader: 'happypack/loader?id=happyBabel',
