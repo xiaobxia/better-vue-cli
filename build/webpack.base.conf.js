@@ -13,7 +13,7 @@ var happyThreadPool = HappyPack.ThreadPool({size: os.cpus().length});
 
 module.exports = {
   entry: {
-    app: './src/index.js'
+    app: './src/main.js'
   },
   output: {
     path: config.build.assetsRoot,

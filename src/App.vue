@@ -7,6 +7,7 @@
 
 <script>
 export default {
+  // 避免命名冲突，name: app
   name: 'app'
 }
 </script>

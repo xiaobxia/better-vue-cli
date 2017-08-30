@@ -42,6 +42,7 @@ exports.cssLoaders = function (options) {
       if (process.env.NODE_ENV === 'production') {
         opt.publicPath = config.build.assetsPathInCss;
       }
+      return ExtractTextPlugin.extract(opt)
     } else {
       return ['vue-style-loader'].concat(loaders)
     }
