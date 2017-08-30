@@ -13,7 +13,7 @@ var happyThreadPool = HappyPack.ThreadPool({size: os.cpus().length});
 
 module.exports = {
   entry: {
-    app: './src/main.js'
+    app: './src/index.js'
   },
   output: {
     path: config.build.assetsRoot,
@@ -45,7 +45,9 @@ module.exports = {
         enforce: 'pre',
         include: [resolve('src'), resolve('test')],
         options: {
-          formatter: require('eslint-friendly-formatter')
+          formatter: require('eslint-friendly-formatter'),
+          //自动修复
+          fix: true
         }
       },
       {
